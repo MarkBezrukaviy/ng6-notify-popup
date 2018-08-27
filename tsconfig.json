@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng6-notify-popup": [
+        "dist/ng6-notify-popup"
+      ],
+      "ng6-notify-popup/*": [
+        "dist/ng6-notify-popup/*"
+      ]
+    }
   }
 }

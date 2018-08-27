@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng6-notify-popup": {
+      "root": "projects/ng6-notify-popup",
+      "sourceRoot": "projects/ng6-notify-popup/src",
+      "projectType": "library",
+      "prefix": "np",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng6-notify-popup/tsconfig.lib.json",
+            "project": "projects/ng6-notify-popup/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng6-notify-popup/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng6-notify-popup/src/test.ts",
+            "tsConfig": "projects/ng6-notify-popup/tsconfig.spec.json",
+            "karmaConfig": "projects/ng6-notify-popup/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng6-notify-popup/tsconfig.lib.json",
+              "projects/ng6-notify-popup/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng6-notify-popup-demo"

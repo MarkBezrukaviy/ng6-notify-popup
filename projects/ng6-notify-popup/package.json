@@ -1,0 +1,46 @@
+{
+  "name": "ng6-notify-popup",
+  "version": "0.0.1",
+  "description": "Based on ng-notify for Angular 6.x",
+  "homepage": "https://github.com/MarkBezrukaviy/ng6-notify-popup",
+  "bugs": "https://github.com/MarkBezrukaviy/ng6-notify-popup/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarkBezrukaviy/ng6-notify-popup"
+  },
+  "contributors": [
+    {
+      "name": "Mark Bezrukaviy",
+      "email": "mark.bezrukaviy@gmail.com"
+    },
+    {
+      "name": "Shubhangi Gupta",
+      "email": "shubhangi140793@gmail.com"
+    }
+  ],
+  "keywords": [
+    "angular6",
+    "notify",
+    "ng-notify",
+    "angular-notification"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@angular/animations": "^6.0.0",
+    "@angular/common": "^6.0.0",
+    "@angular/compiler": "^6.0.0",
+    "@angular/forms": "^6.0.0",
+    "@angular/http": "^6.0.0",
+    "@angular/platform-browser": "^6.0.0",
+    "@angular/platform-browser-dynamic": "^6.01.0",
+    "@angular/router": "^6.1.0",
+    "@types/node": "~8.9.4",
+    "core-js": "^2.5.4",
+    "rxjs": "^6.0.0",
+    "zone.js": "~0.8.26"
+  }
+}

@@ -1,0 +1,173 @@
+/* System notifications */
+.trb-notify {
+  color: #FFF;
+  cursor: default;
+  font-size: 1.3em;
+  left: 0;
+  opacity: 0;
+  padding: 25px 80px;
+  right: 0;
+  display: block;
+  text-align: center;
+  user-select: none;
+  z-index: 9999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.trb-component {
+  position: absolute;
+}
+
+.trb-top {
+  top: 0;
+}
+
+.trb-bottom {
+  bottom: 0;
+}
+
+.trb-fixed {
+  position: fixed;
+}
+
+.trb-absolute {
+  position: absolute;
+}
+
+.trb-dismiss {
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 7px 2px #000;
+  color: #DDD;
+  cursor: pointer;
+  display: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  opacity: 0.2;
+  position: absolute;
+  right: 40px;
+  text-shadow: 1px 1px 5px #000;
+  top: 25px;
+  width: 30px;
+}
+
+.trb-sticky .trb-dismiss {
+  display: block;
+}
+
+.trb-dismiss:hover {
+  background-color: #000;
+}
+
+.trb-dismiss:active {
+  background-color: #666;
+}
+
+/* Reduce notification size for mobile */
+@media only screen and (max-width: 480px) {
+  .trb-notify {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+
+  .trb-dismiss {
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+  }
+}
+
+/* Themes - Default - Pure */
+.trb-info {
+  background-color: #0e90d2;
+}
+
+.trb-error {
+  background-color: #dd514c;
+}
+
+.trb-success {
+  background-color: #5eb95e;
+}
+
+.trb-warn {
+  background-color: #f37b1d;
+}
+
+.trb-grimace {
+  background-color: #8058a5;
+}
+
+/* Themes - Prime */
+.trb-prime.trb-info {
+  background-color: #0033cc;
+}
+
+.trb-prime.trb-error {
+  background-color: #ff0000;
+}
+
+.trb-prime.trb-success {
+  background-color: #00cc00;
+}
+
+.trb-prime.trb-warn {
+  background-color: #ff9900;
+}
+
+.trb-prime.trb-grimace {
+  background-color: #660099;
+}
+
+/* Themes - Pastel */
+.trb-pastel.trb-info {
+  background-color: #7EA7D8;
+}
+
+.trb-pastel.trb-error {
+  background-color: #F6989D;
+}
+
+.trb-pastel.trb-success {
+  background-color: #82CA9D;
+}
+
+.trb-pastel.trb-warn {
+  background-color: #FDC68A;
+}
+
+.trb-pastel.trb-grimace {
+  background-color: #A187BE;
+}
+
+/* Themes - Pitchy */
+.trb-pitchy.trb-info {
+  background-color: #003471;
+}
+
+.trb-pitchy.trb-error {
+  background-color: #9E0B0F;
+}
+
+.trb-pitchy.trb-success {
+  background-color: #007236;
+}
+
+.trb-pitchy.trb-warn {
+  background-color: #A36209;
+}
+
+.trb-pitchy.trb-grimace {
+  background-color: #440E62;
+}
+
+/*# sourceMappingURL=ng-notify.css.map */

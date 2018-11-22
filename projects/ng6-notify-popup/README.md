@@ -1,5 +1,5 @@
 # ng6-notify-popup
-##### for Angular 6.x.
+##### for Angular 7.x.
 Based on
 - [ ng2-notify-popup ](https://github.com/shubhi1407/ng2-notify-popup) for Angular 4.x by Shubhangi Gupta
 - [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens

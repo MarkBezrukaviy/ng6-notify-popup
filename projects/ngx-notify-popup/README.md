@@ -1,15 +1,15 @@
-# ng6-notify-popup
-##### for Angular 7.x.
+# ngx-notify-popup
+##### for Angular 9.x.
 Based on
 - [ ng2-notify-popup ](https://github.com/shubhi1407/ng2-notify-popup) for Angular 4.x by Shubhangi Gupta
 - [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens
 
-## [ View Demo - still Angular 4 version ](https://shubhi1407.github.io/ng2-notify-popup/)
+## [ View Demo - still Angular 9 version ](https://shubhi1407.github.io/ng2-notify-popup/)
 
 ## Installation
 
 ```bash
-$ npm install --save ng6-notify-popup
+$ npm install --save ngx-notify-popup
 ```
 ## Usage
 `AppModule`:
@@ -25,7 +25,7 @@ Run `npm install --save web-animations-js`.
 import 'web-animations-js';  
 
 // Import library
-import { Ng6NotifyPopupModule } from 'ng6-notify-popup';
+import { NgxNotifyPopupModule } from 'ngx-notify-popup';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { Ng6NotifyPopupModule } from 'ng6-notify-popup';
   imports: [
     BrowserModule,
     // Add module to imports
-    Ng6NotifyPopupModule.forRoot()
+    NgxNotifyPopupModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -47,17 +47,17 @@ Once your library is imported, you can use its Notification service
 ```typescript
 // You can now use this library service to show popup anywhere in angular app
 import { Component } from '@angular/core';
-import { Ng6NotifyPopupService } from 'ng6-notify-popup';
+import { NgxNotifyPopupService } from 'ngx-notify-popup';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [Ng6NotifyPopupService]
+  providers: [NgxNotifyPopupService]
 })
 export class AppComponent {
 
-  constructor(private notify: Ng6NotifyPopupService) { }
+  constructor(private notify: NgxNotifyPopupService) { }
 
   // to append in body
   show(text: string, type: string): void {
@@ -70,30 +70,30 @@ export class AppComponent {
 
 ```
 ## API
-### Ng6NotifyPopupService.setConfig( options: object )
+### NgxNotifyPopupService.setConfig( options: object )
 This method can be used to override the default configuration provided by the module. All params are optinal
 ```typescript
-Ng6NotifyPopupService.setConfig({
+NgxNotifyPopupService.setConfig({
                                 position: 'top/bottom',
                                 type: 'info/success/warn/error/grimace/default',
                                 duration: 4000,
                                 sticky: true/false,
                              })
 ```
-### Ng6NotifyPopupService.show( text: string, options?: object )
+### NgxNotifyPopupService.show( text: string, options?: object )
 `show()` method can be called with an optional second argument to override the global default config
 ```typescript
 // Simple notification
-Ng6NotifyPopupService.show("Success");
+NgxNotifyPopupService.show("Success");
 // Notification with options
-Ng6NotifyPopupService.show("Error occured", { position: 'top', type: 'error' })
+NgxNotifyPopupService.show("Error occured", { position: 'top', type: 'error' })
 //Show notification inside a division (MUST have position:relative)
-Ng6NotifyPopupService.show("Inside a div", { location: '#my-div' })
+NgxNotifyPopupService.show("Inside a div", { location: '#my-div' })
 ```
-### Ng6NotifyPopupService.destroy()
+### NgxNotifyPopupService.destroy()
 ```typescript
 // Destroy any active notification
-Ng6NotifyPopupService.destroy();
+NgxNotifyPopupService.destroy();
 ```
 
 ## Custom type

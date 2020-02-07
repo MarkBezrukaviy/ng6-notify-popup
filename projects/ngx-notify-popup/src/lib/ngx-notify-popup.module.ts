@@ -1,9 +1,9 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { Ng6NotifyPopupComponent } from './ng6-notify-popup.component';
+import { NgxNotifyPopupComponent } from './ngx-notify-popup.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentInjectService } from './services/component-inject.service';
-import { Ng6NotifyPopupService } from './services/ng6-notify-popup.service';
+import { NgxNotifyPopupService } from './services/ngx-notify-popup.service';
 
 @NgModule({
   imports: [
@@ -11,21 +11,21 @@ import { Ng6NotifyPopupService } from './services/ng6-notify-popup.service';
     BrowserAnimationsModule
   ],
   declarations: [
-    Ng6NotifyPopupComponent
+    NgxNotifyPopupComponent
   ],
   providers: [
     ComponentInjectService
   ],
   entryComponents: [
-    Ng6NotifyPopupComponent
+    NgxNotifyPopupComponent
   ]
 })
-export class Ng6NotifyPopupModule {
+export class NgxNotifyPopupModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: Ng6NotifyPopupModule,
+      ngModule: NgxNotifyPopupModule,
       providers: [
-        Ng6NotifyPopupService,
+        NgxNotifyPopupService,
         ComponentInjectService
       ]
     };

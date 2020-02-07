@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { Ng6NotifyPopupModule } from 'ng6-notify-popup';
+import { NgxNotifyPopupModule } from '../../projects/ngx-notify-popup/src/lib/ngx-notify-popup.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { Ng6NotifyPopupModule } from 'ng6-notify-popup';
   ],
   imports: [
     BrowserModule,
-    Ng6NotifyPopupModule.forRoot()
+    NgxNotifyPopupModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

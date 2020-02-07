@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng6-notify-popup-demo": {
+    "ngx-notify-popup-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng6-notify-popup-demo",
+            "outputPath": "dist/ngx-notify-popup-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng6-notify-popup-demo:build"
+            "browserTarget": "ngx-notify-popup-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng6-notify-popup-demo:build:production"
+              "browserTarget": "ngx-notify-popup-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng6-notify-popup-demo:build"
+            "browserTarget": "ngx-notify-popup-demo:build"
           }
         },
         "test": {
@@ -72,7 +72,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -95,7 +95,7 @@
         }
       }
     },
-    "ng6-notify-popup-demo-e2e": {
+    "ngx-notify-popup-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng6-notify-popup-demo:serve"
+            "devServerTarget": "ngx-notify-popup-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng6-notify-popup-demo:serve:production"
+              "devServerTarget": "ngx-notify-popup-demo:serve:production"
             }
           }
         },
@@ -122,38 +122,38 @@
         }
       }
     },
-    "ng6-notify-popup": {
-      "root": "projects/ng6-notify-popup",
-      "sourceRoot": "projects/ng6-notify-popup/src",
+    "ngx-notify-popup": {
+      "root": "projects/ngx-notify-popup",
+      "sourceRoot": "projects/ngx-notify-popup/src",
       "projectType": "library",
-      "prefix": "np",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng6-notify-popup/tsconfig.lib.json",
-            "project": "projects/ng6-notify-popup/ng-package.json"
+            "tsConfig": "projects/ngx-notify-popup/tsconfig.lib.json",
+            "project": "projects/ngx-notify-popup/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ng6-notify-popup/ng-package.prod.json"
+              "project": "projects/ngx-notify-popup/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng6-notify-popup/src/test.ts",
-            "tsConfig": "projects/ng6-notify-popup/tsconfig.spec.json",
-            "karmaConfig": "projects/ng6-notify-popup/karma.conf.js"
+            "main": "projects/ngx-notify-popup/src/test.ts",
+            "tsConfig": "projects/ngx-notify-popup/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-notify-popup/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng6-notify-popup/tsconfig.lib.json",
-              "projects/ng6-notify-popup/tsconfig.spec.json"
+              "projects/ngx-notify-popup/tsconfig.lib.json",
+              "projects/ngx-notify-popup/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -163,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "ng6-notify-popup-demo"
+  "defaultProject": "ngx-notify-popup-demo"
 }

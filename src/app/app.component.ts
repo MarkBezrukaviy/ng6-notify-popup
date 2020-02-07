@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
-import { Ng6NotifyPopupService } from 'ng6-notify-popup';
+import { NgxNotifyPopupService } from '../../projects/ngx-notify-popup/src/lib/services/ngx-notify-popup.service';
 
 @Component({
   selector: 'npd-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng6-notify-popup-demo';
+  title = 'ngx-notify-popup-demo';
 
   constructor(
-    private notify: Ng6NotifyPopupService
+    private notify: NgxNotifyPopupService
   ) {
 
   }
 
   test() {
-    this.notify.show('Success');
+    this.notify.show({ text: 'Success', type: 'success' });
   }
 }

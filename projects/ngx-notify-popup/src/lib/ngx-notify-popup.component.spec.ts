@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Ng6NotifyPopupComponent } from './ng6-notify-popup.component';
+import { NgxNotifyPopupComponent } from './ngx-notify-popup.component';
 
-describe('Ng6NotifyPopupComponent', () => {
-  let component: Ng6NotifyPopupComponent;
-  let fixture: ComponentFixture<Ng6NotifyPopupComponent>;
+describe('NgxNotifyPopupComponent', () => {
+  let component: NgxNotifyPopupComponent;
+  let fixture: ComponentFixture<NgxNotifyPopupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Ng6NotifyPopupComponent ]
+      declarations: [ NgxNotifyPopupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Ng6NotifyPopupComponent);
+    fixture = TestBed.createComponent(NgxNotifyPopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

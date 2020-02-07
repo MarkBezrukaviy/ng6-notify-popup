@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ng6-notify-popup",
+  "dest": "../../dist/ngx-notify-popup",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

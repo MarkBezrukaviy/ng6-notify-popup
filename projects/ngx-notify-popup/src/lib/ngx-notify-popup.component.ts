@@ -2,14 +2,20 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
-  selector: 'notify',
+  selector: 'ngx-notify',
   template: `
     <div [@shrinkOut]="fade" class="trb-notify {{'trb-' + type}}"
-         [ngClass]="{'trb-top': position=='top','trb-bottom':position=='bottom','trb-fixed':location=='body','trb-absolute':location!='body','trb-sticky':sticky==true}">
-      <span class="trb-message">{{notifyText}}</span>
+         [ngClass]="{
+            'trb-top': position=== 'top',
+            'trb-bottom': position === 'bottom',
+            'trb-fixed': location === 'body',
+            'trb-absolute': location !== 'body',
+            'trb-sticky': sticky
+         }">
+      <span class="trb-message">{{text}}</span>
       <span class="trb-dismiss" (click)="dismiss()">×</span>
     </div>`,
-  styleUrls: ['styles/ng6-notify-popup.css'],
+  styleUrls: ['ngx-notify-popup.css'],
   animations: [
     trigger('shrinkOut', [
       state('show', style({
@@ -23,11 +29,11 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     ])
   ]
 })
-export class Ng6NotifyPopupComponent {
+export class NgxNotifyPopupComponent {
   @Input() position: string;
   @Input() duration: number;
   @Input() type: string;
-  @Input() notifyText: string;
+  @Input() text: string;
   @Input() fade: string;
   @Input() sticky: boolean;
   @Input() location: string;
